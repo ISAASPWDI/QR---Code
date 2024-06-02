@@ -1,0 +1,80 @@
+body {
+    font-size: 15px;
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    /* Tamaño de fuente base para móviles */
+}
+
+.qr-code {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 375px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.qr-code-img{
+    max-width: 375px;
+}
+.qr-code-img img{
+    max-width: 300px;
+    margin: 20px 20px 0 20px    ;
+    border-radius: 10px;
+    
+}
+.qr-code-title h2{
+    max-width: 290px;
+    color: hsl(218, 44%, 22%);
+    text-align: center;
+}
+.header {
+    background-color: #333;
+    color: #fff;
+}
+.qr-code-p p{
+    max-width: 260px;
+    text-align: center;
+    color: hsl(220, 15%, 55%);
+}
+.title {
+    display: flex;
+    color: hsl(218, 44%, 22%);
+    max-width: 375px;
+    justify-content: center;
+}
+
+/* Consulta de medios para computadoras de escritorio */
+@media screen and (min-width: 1440px) {
+
+    /* Estilos para computadoras de escritorio */
+    body {
+        font-size: 15px;
+        /* Tamaño de fuente aún mayor para escritorio */
+    }
+    .qr-code-title h2{
+        max-width: 280px;
+        color: hsl(218, 44%, 22%);
+        text-align: center;
+        
+        font-weight: bold;
+        margin: 20px 20px 0 20px;
+    }
+    .qr-code-p p{
+        max-width: 260px;
+        font-size: 16px;
+        text-align: center;
+        color: hsl(220, 15%, 55%);
+        
+        margin-bottom: 40px;
+    }
+    .header {
+        padding: 30px;
+    }
+}
